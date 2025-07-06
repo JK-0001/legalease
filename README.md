@@ -1,77 +1,83 @@
-🧾 LegalEase — Your Legal Copilot for Indian Startups 🇮🇳
-LegalEase is an AI-powered legal assistant that helps Indian entrepreneurs get clear, trusted answers to questions about startup recognition, taxation, compliance, and more.
+# 🧑‍⚖️ LegalEase – AI Legal Assistant for Indian Entrepreneurs
 
-Built for confused founders navigating a maze of PDFs and government portals.
+LegalEase is an AI-powered chatbot designed to simplify legal and tax compliance for Indian startup founders and small business owners. It uses Retrieval-Augmented Generation (RAG) with OpenAI GPT-4o and ChromaDB to deliver accurate, document-backed answers sourced from:
 
-🚀 What It Does
-✅ Answers legal and compliance-related questions for Indian startups
-✅ Uses Retrieval-Augmented Generation (RAG) with OpenAI + ChromaDB
-✅ Supports English and Hindi
-✅ Crawls live data from sites like:
+![LegalEase Preview](./public/legalease_3.png)
 
-StartupIndia.gov.in
+- [startupindia.gov.in](https://www.startupindia.gov.in/)
+- [incometaxindia.gov.in](https://incometaxindia.gov.in/)
 
-incometaxindia.gov.in
+---
 
-💡 Problem We're Solving
-Legal content in India is scattered, outdated, and jargon-heavy
+## 🎥 Demo
 
-First-time founders don’t know where to begin
+- 🔗 [Watch Demo Video](https://youtu.be/YOUR_VIDEO_LINK)
+- 🌐 [Try the Live Chatbot](https://YOUR_STREAMLIT_APP_LINK)
 
-Professionals are expensive — and government sites are overwhelming
+---
 
-⚙️ Tech Stack
-Frontend: Streamlit Chat UI
+## 🚀 Features
 
-Backend: Python, OpenAI GPT-4o, ChromaDB, Langchain
+- ✅ Clear answers in English & Hindi
+- ✅ Trained on real Indian government sources
+- ✅ Uses RAG with ChromaDB for contextual accuracy
+- ✅ Friendly, beginner-focused tone for new founders
+- ✅ Fully open-source & locally hosted
 
-Embeddings: OpenAI Embeddings
+---
 
-Crawling: Crawl4AI
+## 🧠 Tech Stack
 
-Hosting: Local or Vercel-ready
+| Technology       | Role                                  |
+|------------------|----------------------------------------|
+| `OpenAI GPT-4o`  | LLM agent for answering questions      |
+| `ChromaDB`       | Vector DB for storing document chunks  |
+| `crawl4ai`       | Smart crawler to extract website text  |
+| `Streamlit`      | Lightweight UI for the chatbot         |
+| `LangChain`      | For PDF parsing and text chunking      |
+| `Pydantic-AI`    | For creating typed tool-based agents   |
 
-🧠 How It Works
-Crawl trusted Indian legal sources and chunk the content
+---
 
-Store embeddings in ChromaDB
+## 🧱 How It Works
 
-Use GPT-4o with RAG to answer user questions based on real documents
+1. Websites and legal PDFs are crawled or uploaded.
+2. Content is chunked and embedded into ChromaDB using OpenAI embeddings.
+3. User asks a question via the chatbot.
+4. Relevant chunks are retrieved and passed to GPT-4o with system instructions.
+5. GPT-4o generates accurate, beginner-friendly responses backed by documents.
 
-If answer not found — it says “I don’t know” (no hallucinations)
+---
 
-🧪 Try These Questions
-"How can I register my startup with DPIIT?"
+## 🧑‍🤝‍🧑 Team
 
-"What are tax benefits under section 80-IAC?"
+- **Jatin Khatri** – Backend engineer, RAG pipeline, agent integration
+- **Hrishabh Singh** – UI & design, crawling, Streamlit interface
 
-"हमें startup india में recognition कैसे मिलता है?"
+---
 
-📹 Demo Video
-[YouTube Link Placeholder — Add yours here!]
+## ⚙️ Getting Started
 
-📄 Pitch Deck (PDF)
-Download Pitch Deck (PDF)
+### 1. **Clone the repository**
 
-🧑‍🤝‍🧑 Team
-Jatin Khatri — Backend, Agent logic, AI infrastructure
+```bash
+git clone https://github.com/JK-0001/legalease.git
+cd legalease
+```
 
-Hrishabh Singh — Streamlit UI, Source selection & crawling
+### 2. **Install dependencies:**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate # on Mac / Linux: source venv/bin/activate 
+   pip install -r requirements.txt
+   pip install langchain langchain-community langchain-openai
+   playwright install
+   ```
 
-📈 Roadmap
-Add Ministry of Corporate Affairs, GST, Labour Laws, RBI
-
-WhatsApp and voice-based agent
-
-Founder dashboard for compliance
-
-B2B SaaS API
-
-🏁 Submission Highlights
-✅ Working MVP with real data + working chat interface
-
-🎥 1–2 min demo video (coming)
-
-📄 PDF pitch deck
-
-👥 Team of 2 with clear role split
+### 3. **Set up environment variables:**
+   - create `.env` file
+   - Update `.env` with your API keys and preferences:
+     ```env
+     OPENAI_API_KEY=your_openai_api_key
+     MODEL_CHOICE=gpt-4.1-mini  # or your preferred OpenAI model
+     ```

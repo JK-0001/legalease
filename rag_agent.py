@@ -89,8 +89,6 @@ async def retrieve(context: RunContext[RAGDeps], search_query: str, n_results: i
     )
     
     # Format the results as context
-    result = format_results_as_context(query_results)
-    print(result)
     return format_results_as_context(query_results)
 
 

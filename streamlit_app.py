@@ -63,7 +63,9 @@ async def run_agent_with_streaming(user_input):
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 async def main():
-    st.title("ChromaDB Crawl4AI RAG AI Agent")
+    st.title("🤖 AI Chatbot")
+    st.markdown("Ask legal questions about starting a business in India (English or Hindi).")
+    
 
     # Initialize chat history in session state if not present
     if "messages" not in st.session_state:

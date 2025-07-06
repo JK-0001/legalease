@@ -11,8 +11,7 @@ LegalEase is an AI-powered chatbot designed to simplify legal and tax compliance
 
 ## 🎥 Demo
 
-- 🔗 [Watch Demo Video](https://youtu.be/YOUR_VIDEO_LINK)
-- 🌐 [Try the Live Chatbot](https://YOUR_STREAMLIT_APP_LINK)
+- 🔗 [Watch Demo Video](https://youtu.be/Hbqn2lG9OQA)
 
 ---
 
